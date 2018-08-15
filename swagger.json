@@ -86,9 +86,15 @@ paths:
         201:
           description: item created
         400:
-          description: invalid input, object invalid fgh
+          description: invalid input, object invalid
         409:
           description: an existing item already exists
+        default:
+          description: ghukjgbf
+          schema:
+            $ref: '#/definitions/error-model'
+          responseSchema:
+            $ref: '#/definitions/error-model'
 definitions:
   InventoryItem:
     type: object
@@ -137,3 +143,4 @@ definitions:
       phone: 408-867-5309
       name: ACME Corporation
       homePage: https://www.acme-corp.com
+  error-model: {}
