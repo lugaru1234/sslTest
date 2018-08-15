@@ -65,6 +65,8 @@ paths:
               $ref: '#/definitions/InventoryItem'
         400:
           description: bad input parameter
+        default:
+          description: sfsd
     post:
       tags:
       - admins
